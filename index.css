@@ -1,0 +1,48 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container 1 (Centered) */
+.container1 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 3px solid #007bff; /* Blue border for the container */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 20px;
+}
+
+/* Title styling */
+.container1 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container 2 (Left-aligned content) */
+.container2 {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #6c757d; /* Gray border for container2 */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Leader and member name styling */
+h2{
+    font-family: 'Roboto', sans-serif;
+}
