@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Drawing with HTML and CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .cat {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Cat body */
+        .body {
+            position: absolute;
+            width: 160px;
+            height: 140px;
+            background-color: #ffcc66;
+            border-radius: 50%;
+            top: 40px;
+            left: 20px;
+        }
+
+        /* Cat head */
+        .head {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: #ffcc66;
+            border-radius: 50%;
+            top: -40px;
+            left: 40px;
+        }
+
+        /* Cat eyes */
+        .eye-left, .eye-right {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            top: 40px;
+        }
+        
+        .eye-left {
+            left: 30px;
+        }
+
+        .eye-right {
+            right: 30px;
+        }
+
+        /* Cat pupils */
+        .pupil-left, .pupil-right {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            top: 5px;
+        }
+        
+        .pupil-left {
+            left: 5px;
+        }
+
+        .pupil-right {
+            right: 5px;
+        }
+
+        /* Cat nose */
+        .nose {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            border-radius: 50%;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Cat mouth */
+        .mouth {
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            border-radius: 50%;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid black;
+            border-top: none;
+            border-radius: 20px 20px 0 0;
+        }
+
+        /* Cat ears */
+        .ear-left, .ear-right {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #ffcc66;
+            border-radius: 50%;
+            top: -20px;
+            transform: rotate(45deg);
+        }
+
+        .ear-left {
+            left: -20px;
+        }
+
+        .ear-right {
+            right: -20px;
+        }
+
+        /* Cat whiskers */
+        .whiskers-left, .whiskers-right {
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background-color: black;
+        }
+
+        .whiskers-left {
+            top: 75px;
+            left: -60px;
+        }
+
+        .whiskers-right {
+            top: 75px;
+            right: -60px;
+        }
+
+        .whisker-top-left, .whisker-top-right {
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: black;
+        }
+
+        .whisker-top-left {
+            top: 70px;
+            left: -50px;
+        }
+
+        .whisker-top-right {
+            top: 70px;
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cat">
+        <div class="body"></div>
+        <div class="head">
+            <div class="eye-left">
+                <div class="pupil-left"></div>
+            </div>
+            <div class="eye-right">
+                <div class="pupil-right"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="ear-left"></div>
+            <div class="ear-right"></div>
+            <div class="whiskers-left"></div>
+            <div class="whiskers-right"></div>
+            <div class="whisker-top-left"></div>
+            <div class="whisker-top-right"></div>
+        </div>
+    </div>
+</body>
+</html>
